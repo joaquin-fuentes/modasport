@@ -4,12 +4,7 @@
     padding: 0;
     font-family: sans-serif;
 }
-body{
 
-    background: #8e9eab;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #eef2f38f, #8e9eab98);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #eef2f38f, #8e9eabb2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
 /* Animacion JS */
 
 .animado{
@@ -20,6 +15,7 @@ background: linear-gradient(to right, #eef2f38f, #8e9eabb2); /* W3C, IE 10+/ Edg
     opacity: 0;
     transition: all 1s;
 }
+
 .animadoHeaderIzquierda{
     opacity: 0;
     transition: all 2s;
@@ -47,6 +43,7 @@ background: linear-gradient(to right, #eef2f38f, #8e9eabb2); /* W3C, IE 10+/ Edg
          margin-left: 0;
       }
     }
+
 
 /* HEADER */
 
@@ -111,6 +108,7 @@ background: linear-gradient(to right, #eef2f38f, #8e9eabb2); /* W3C, IE 10+/ Edg
     text-shadow: 1px 1px 1px white;
     text-decoration: underline;
 }
+
 /* FONDO HEADER */
 
 .fondo-header{
@@ -121,14 +119,14 @@ background: linear-gradient(to right, #eef2f38f, #8e9eabb2); /* W3C, IE 10+/ Edg
     align-items: center;
     justify-content: center;
     background: #8e9eab;  
-background: -webkit-linear-gradient(to right, #eef2f331, #8e9eabcb),url(../../img/general/runningHeader2.jpg);
-background: linear-gradient(to right, #eef2f323, #8e9eabd3), url(../../img/general/runningHeader2.jpg);
-background-attachment: fixed;
+background: -webkit-linear-gradient(to right, #eef2f331, #8e9eabcb),url(../../img/general/ropadeportiva2.jpg);
+background: linear-gradient(to right, #eef2f323, #8e9eabd3), url(../../img/general/ropadeportiva2.jpg);
+background-attachment:fixed;
 	background-size: cover;
     overflow: hidden;
 }
 .fondo-header h1{
-    font-size: 6vw;
+    font-size: 4vw;
     color: white;
     text-shadow: 5px 5px 7px black;
     margin: 0;
@@ -136,100 +134,29 @@ background-attachment: fixed;
     text-align: center;
 }
 .fondo-header h2{
-    font-size: 4vw;
+    font-size: 3vw;
     color: rgb(255, 255, 255);
     text-shadow: 5px 5px 7px black;
     margin: 0;
     width: 100%;
     text-align: center;
 }
+/* SECCION PRODUCTOS */
 
-/* SECCION "NUESTROS PRODUCTOS" */
-.section-nuestros-productos{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
 .titulo{
     text-align: center;
     color:rgb(8, 4, 58);
     margin: 2%;
     font-size: 2vw;
 }
-.tipos-productos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 70%;
-    margin-top: 2%;
-    
-}
-.foto-tipos-productos{
-    width: 50%;
-    height: 100%;
-}
-.foto-tipos-productos img{
-    width: 100%;
-    height: 100%;
-}
-.nuestros-productos{
-    width: 50%;
-    height: 100%;
-}
-.ropa-deportiva{
-    width: 100%;
-    height: 40%;
-}
-.accesorios{
-    width: 100%;
-    height: 40%;
-}
-.ropa-deportiva h3, .accesorios h3{
-    margin-left: 3% ;
-    height: 20%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-
-}
-
-.ropa-deportiva h3 a, .accesorios h3 a{
-    margin-left: 3%;
-    color:rgb(8, 4, 58);
-    text-decoration: none;
-}
-.ropa-deportiva h3 a:hover, .accesorios h3 a:hover{
-    text-decoration: underline;
-}
-
-.ropa-deportiva h3 span, .accesorios h3 span{
-    background: #2c3e50b6;
-    color: #fff;
-    border-radius: 50%;
-    text-align: center;
-    width: 30px;
-    height: 30px;
-    padding: 1%;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);  
-}
-
-.ropa-deportiva p, .accesorios p{
-    margin-left: 3% ;
-    margin-top: 3%;
-    width: 100%;
-}
-/* SECCION NUEVOS INGRESOS */
-.nuevos-ingresos{
+.productos{
     width: 100%;
     height: 120vh;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.nuevos-ingresos main{
+.productos main{
     width: 80%;
     height: 90%;
     display: flex;
@@ -281,75 +208,6 @@ background-attachment: fixed;
     text-decoration: underline;
 }
 
-/* SECCION DE PROMOCIONES */
-.promociones{
-    margin-top: 3%;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.promociones main{
-    width: 80%;
-    height: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.tarjeta-producto-promociones{
-    width: 30%;
-    height: 80%;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-    border-radius: 4px;
-}
-
-.tarjeta-producto-promociones img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-.tarjeta-producto-promociones:hover .hover-info{
-    transform: scale(1);
-}
-/* SECCION NUESTROS SERVICIOS */
-.nuestros-servicios{
-    width: 100%;
-    height: 60vh;
-}
-.servicios{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-bottom: 5%;
-}
-.servicio{
-    width: 20%;
-    height: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
-.servicio h5, .servicio i{
-    font-size: 20px;
-    color:rgb(8, 4, 58);
-}
-.servicios h5{
-    height: 35%;
-    width: 100%;
-}
-.servicios i{
-    height: 35%;
-    width: 100%;
-}
 /* FOOTER */
 footer{
     width: 100%;
@@ -361,6 +219,7 @@ footer{
     flex-direction: column;
     color: white;
     background-color: rgb(27, 27, 27);
+    margin-top: 4%;
 }
 .footer-superior{
     width: 100%;

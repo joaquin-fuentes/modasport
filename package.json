@@ -1,0 +1,22 @@
+{
+  "name": "modasport",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaquin-fuentes/modasport.git"
+  },
+  "author": "Joaquin Fuentes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaquin-fuentes/modasport/issues"
+  },
+  "homepage": "https://github.com/joaquin-fuentes/modasport#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

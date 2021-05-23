@@ -4,7 +4,14 @@
     padding: 0;
     font-family: sans-serif;
 }
+body{
 
+    background: #8e9eab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #eef2f38f, #8e9eab98);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #eef2f38f, #8e9eabb2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
 /* HEADER */
 
 .header-superior{
@@ -15,6 +22,7 @@
     position: fixed;
     z-index: 2;
     color: white;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 .header-izquierda{
     width: 50%;
@@ -29,6 +37,7 @@
     margin-left: 5%;
     color: white;
     text-decoration: none;
+    text-shadow: 1px 1px 1px black;
 }
 .header-izquierda a:hover{
     text-shadow: 1px 1px 1px white;
@@ -56,6 +65,7 @@
 .header-nav nav ul li a{
     text-decoration: none;
     color: white;
+    text-shadow: 1px 1px 1px black;
 }
 .header-nav nav ul li a:hover{
     text-shadow: 1px 1px 1px white;
@@ -70,21 +80,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #1D4350;  
-background: -webkit-linear-gradient(to right, #a43931a6, #1d4350a6), url(../../img/general/runningHeader2.jpg) ;
-background: linear-gradient(to right, #a4393194, #1d43508e), url(../../img/general/runningHeader2.jpg);
+    background: #8e9eab;  
+background: -webkit-linear-gradient(to right, #eef2f331, #8e9eabcb),url(../../img/general/runningHeader2.jpg);
+background: linear-gradient(to right, #eef2f323, #8e9eabd3), url(../../img/general/runningHeader2.jpg);
 background-attachment: contain;
 	background-size: cover;
 }
 .fondo-header h1{
     font-size: 6vw;
     color: white;
-    text-shadow: 2px 2px 3px black;
+    text-shadow: 5px 5px 7px black;
 }
 .fondo-header h2{
     font-size: 4vw;
-    color: white;
-    text-shadow: 2px 2px 3px black;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 7px black;
 }
 
 /* SECCION "NUESTROS PRODUCTOS" */
@@ -97,7 +107,7 @@ background-attachment: contain;
 }
 .titulo{
     text-align: center;
-    color: rgb(97, 42, 148);
+    color:rgb(8, 4, 58);
     margin: 2%;
     font-size: 2vw;
 }
@@ -141,6 +151,11 @@ background-attachment: contain;
 
 .ropa-deportiva h3 a, .accesorios h3 a{
     margin-left: 3%;
+    color:rgb(8, 4, 58);
+    text-decoration: none;
+}
+.ropa-deportiva h3 a:hover, .accesorios h3 a:hover{
+    text-decoration: underline;
 }
 
 .ropa-deportiva h3 span, .accesorios h3 span{

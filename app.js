@@ -21,3 +21,7 @@ app.get('/productos', (req,res)=>{
 app.get('/usuarios/login', (req,res)=>{
     res.sendFile(__dirname + '/src/views/user/login.html')
 });
+
+app.get('/usuarios/registro', (req,res)=>{
+    res.sendFile(__dirname + '/src/views/user/register.html')
+});

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../css/user/login.css">
+    <link rel="stylesheet" href="../../../css/user/register.css">
     <link rel="icon" href="../../../img/general/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <title>Moda Sport</title>
@@ -31,8 +31,16 @@
     </header>
     <section class="seccion-login">
         <main class="formulario-login animadoFijo">
-            <h1>LOGIN</h1>
+            <h1>FORMULARIO DE REGISTRO</h1>
             <form action="">
+                <div class="input-nombre">
+                    <label for="nombre"><i class="fas fa-user"></i></label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                </div>
+                <div class="input-apellido">
+                    <label for="apellido"><i class="far fa-user"></i></label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                </div>
                 <div class="input-email">
                     <label for="email"><i class="fas fa-envelope"></i></label>
                     <input type="text" name="email" id="email" placeholder="E-mail">
@@ -47,7 +55,7 @@
 
 
             </form>
-            <h4 class="frase-inferior-formulario">¿Aún no estas registrado?  <a href="/usuarios/registro">   Click aquí!</a></h4>
+            <h4 class="frase-inferior-formulario">Ya estas registrado? <a href="/usuarios/login">Ingresá aquí!</a></h4>
 
         </main>
 

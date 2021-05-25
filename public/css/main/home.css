@@ -6,7 +6,7 @@
 }
 body{
 
-    background: #8e9eab;  /* fallback for old browsers */
+background: #8e9eab;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #eef2f38f, #8e9eab98);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #eef2f38f, #8e9eabb2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
@@ -396,4 +396,213 @@ footer{
     width: 100%;
     border-bottom:rgb(8, 4, 58);
    
+}
+/* MEDIDAS PARA TABLET */
+@media (max-width: 768px){
+/* FONDO HEADER - TABLET */
+.fondo-header{
+    background-position:center ;
+}
+/* SECCION "NUESTROS PRODUCTOS" - TABLET */
+
+.section-nuestros-productos{
+    height: 70vh;
+}
+.titulo{
+    font-size: 3.5vw;
+}
+.tipos-productos{
+    height: 70%;  
+}
+.ropa-deportiva, .accesorios{
+    height: 50%;
+}
+.ropa-deportiva h3 span, .accesorios h3 span{
+    padding: 2%;  
+}
+/* NUEVOS INGRESOS - TABLET */
+
+.tarjeta-producto{
+    width: 30%;
+    height: 32%;
+}
+
+/* SECCION DE PROMOCIONES - TABLET */
+.promociones{
+    height: 60vh;
+}
+
+/* SECCION NUESTROS SERVICIOS - TABLET */
+.nuestros-servicios{
+    width: 100%;
+    height: 60vh;
+}
+.servicios{
+    align-items:flex-start;
+    padding-top: 7%;
+}
+.servicio{
+    width: 33%;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+/* FOOTER - TABLET */
+.footer-superior{
+    justify-content: space-around;
+}
+.info-footer{
+    width: 33%;
+}
+}
+/* MEDIDAS PARA MOBILE */
+@media (max-width: 460px){
+
+/* HEADER - MOBILE*/
+
+
+
+.header-nav{
+
+}
+.header-nav nav {
+    width: 100%;
+    height: 100%;
+}
+.header-nav nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+.header-nav nav ul li{
+    list-style: none;
+    margin-right: 5%;
+}
+.header-nav nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+.header-nav nav ul li a:hover{
+    text-shadow: 1px 1px 1px white;
+    text-decoration: underline;
+}
+/* FONDO HEADER - MOBILE */
+
+.fondo-header{
+    background-position:center ;
+}
+.fondo-header h1{
+    font-size: 12vw;
+   margin-bottom: 10%;
+}
+.fondo-header h2{
+    font-size: 8vw;
+    width: 80%;
+}
+
+/* SECCION "NUESTROS PRODUCTOS" - MOBILE */
+.section-nuestros-productos{
+    width: 100%;
+    height: 100vh;
+}
+.titulo{
+    font-size: 6vw;
+}
+.tipos-productos{
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+}
+.foto-tipos-productos{
+    width: 95%;
+    height: 50%;
+}
+.nuestros-productos{
+    margin-top: 2%;
+    width: 95%;
+    height: 50%;
+}
+.ropa-deportiva{
+   margin-top: 3%;
+}
+.ropa-deportiva h3 span, .accesorios h3 span{
+    padding: 1.5%;
+    
+}
+
+/* SECCION NUEVOS INGRESOS - MOBILE */
+.nuevos-ingresos{
+    height: 100%;
+}
+.tarjeta-producto{
+    width: 40%;
+    height: 22vh;
+    margin: 2%
+}
+.hover-info ul li{
+    font-size: 2vh;
+    margin-bottom: 2%;
+    color: white;
+}
+
+/* SECCION DE PROMOCIONES - MOBILE */
+.promociones{
+    height: 100%;
+}
+.tarjeta-producto-promociones{
+    width: 40%;
+    height: 30vh;
+    margin-top: 2%;
+   
+}
+/* SECCION NUESTROS SERVICIOS - MOBILE*/
+.nuestros-servicios{
+    margin-top: 15%;
+    height: 100vh;
+}
+.servicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+}
+.servicio{
+    width: 90%;
+    height: 30%;
+  
+}
+.servicios h5{
+    height:auto;
+}
+.servicios i{
+    height: auto;
+}
+/* FOOTER - MOBILE */
+footer{
+    height: 50vh;
+}
+.footer-superior{
+    height: 80%;
+    justify-content:center;
+    flex-direction: column;
+}
+.info-footer{
+    width: 90%;
+    height: 33%;
+}
+.info-footer h4{
+    height: auto;
+    text-shadow: 1px 1px 1px black;
+}
+.info-footer h5{
+    margin-top: 0;
+    height:auto;
+}
+.footer-inferior{
+    height: 20%;
+}
 }

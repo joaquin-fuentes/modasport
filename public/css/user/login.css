@@ -92,14 +92,15 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #8e9eab;  
+overflow: hidden;
+background: #8e9eab;
 background: -webkit-linear-gradient(to right, #eef2f331, #8e9eabcb),url(../../img/general/ropadeportiva2.jpg);
 background: linear-gradient(to right, #eef2f323, #8e9eabd3), url(../../img/general/ropadeportiva2.jpg);
-background-attachment:fixed;
-	background-size:cover;
-    overflow: hidden;
-        background-position:center ;
-    
+background-attachment: fixed;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: cover;
+
 }
 
 /* FORMULARIO DE LOGIN */
@@ -287,12 +288,6 @@ footer{
         .enlaces-menu.activado{
             display: flex;
         }
-    
-/* FONDO HEADER - TABLET */
-
-.fondo-header{
-    background-position: center;
-}
 /* FORMULARIO DE LOGIN - TABLET*/
 .formulario-login{
     width: 65%;
@@ -329,12 +324,10 @@ footer{
           padding:0 ;
           padding-left: 5%;
       }
-    /* FONDO HEADER - TABLET */
-
-    .fondo-header{
-        background-position:center ;
-    }
 /* FORMULARIO DE LOGIN - MOBILE */
+.seccion-login{
+    height: 92vh;
+}
 .formulario-login{
     width: 85%;
     height: 60%;
@@ -370,8 +363,31 @@ h4{
     flex-direction: row;
 }
   
-    /* FOOTER - MOBILE */
-    footer{
-        height: 40vh;
-    }
+    
+/* FOOTER - MOBILE */
+footer{
+    height: 50vh;
+}
+.footer-superior{
+    height: 60%;
+    flex-direction: column;
+}
+.info-footer{
+    width: 90%;
+    height: 25%;
+}
+.info-footer h4{
+    height: auto;
+}
+.info-footer h5{
+    margin-top:0;
+    height: auto;
+}
+.footer-inferior{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    height: 40%;
+}
+
 }

@@ -314,7 +314,16 @@ footer{
         .enlaces-menu.activado{
             display: flex;
         }
-    
+
+        /* FORMULARIO DE CREACION - TABLET */
+        
+    .col-vertical div{
+         width: 99%;
+       }
+       .formulario-login form div label{
+        font-size: 2.5vw;
+        margin: 2%;
+    }
     /* FOOTER - TABLET */
     .footer-superior{
         justify-content: space-around;
@@ -334,7 +343,20 @@ footer{
           padding:0 ;
           padding-left: 5%;
       }
+      /* FORMULARIO DE CREACION - MOBILE */
+      .formulario-login{
+          width: 90%;
+      }
       
+      .formulario-login form div input{
+          height: 35%;
+          width: 70%;
+          border-radius: 5px;
+}
+      .formulario-login form div label{
+        font-size: 3.5vw;
+        margin: 5%;
+    }
 /* FOOTER - MOBILE */
 footer{
     height: 50vh;

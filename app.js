@@ -25,6 +25,11 @@ app.get('/productos/editar', (req,res)=>{
 });
 
 // RUTAS USUARIOS
+
+app.get('/usuarios', (req,res)=>{
+    res.sendFile(__dirname + '/src/views/user/listado.html')
+});
+
 app.get('/usuarios/login', (req,res)=>{
     res.sendFile(__dirname + '/src/views/user/login.html')
 });

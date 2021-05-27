@@ -393,7 +393,7 @@ footer{
 .footer-inferior{
     display: flex;
     justify-content: center;
-    align-items:flex-start;
+    align-items:center;
     height: 40%;
 }
 

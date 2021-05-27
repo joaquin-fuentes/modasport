@@ -94,6 +94,7 @@ nav{
     padding: 0;
     background-color: transparent;
     color: white;
+    text-shadow: 1px 1px 1px black;
     font-size: 4vh;
 }
 .enlaces-menu{

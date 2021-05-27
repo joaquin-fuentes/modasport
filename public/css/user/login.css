@@ -1,107 +1,3 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
-
-/* Animacion JS */
-
-.animado{
-    opacity: 0;
-    transition: all 1s;
-}
-.animadoFijo{
-    opacity: 0;
-    transition: all 1s;
-}
-
-/* HEADER */
-
-.header-superior{
-    display: flex;
-    width: 100%;
-    position: fixed;
-    z-index: 2;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-.logo{
-    width: 50px;
-    height: 40px;
-    border-radius: 50%;
-}
-.div-logo{
-    width: 40%;
-    display: flex;
-    align-items: center;
-}
-.div-logo a{
-    text-decoration: none;
-    color:  white;
-    font-weight: 600;
-    padding: 0 8%;
-    width: 30%;
-}
-.div-logo a:hover{
-    text-decoration: underline;
-    text-shadow: 1px 1px 1px black;
-}
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-.menu-hamburguesa{
-    display: none;
-    cursor: pointer;
-    border: none;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    color: white;
-    font-size: 4vh;
-}
-.enlaces-menu{
-    width: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-.enlaces-menu li{
-    padding: 0 5%;
-    list-style-type: none;
-}
-.enlaces-menu li a{
-    text-decoration: none;
-    color:  white;
-    font-weight: 600;
-}
-.enlaces-menu li a:hover{
-    text-decoration: underline;
-    text-shadow: 1px 1px 1px black;
-}
-
-/* FONDO HEADER */
-
-.fondo-header{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-overflow: hidden;
-background: #8e9eab;
-background: -webkit-linear-gradient(to right, #eef2f331, #8e9eabcb),url(../../img/general/ropadeportiva2.jpg);
-background: linear-gradient(to right, #eef2f323, #8e9eabd3), url(../../img/general/ropadeportiva2.jpg);
-background-attachment: fixed;
-background-size: cover;
-background-repeat: no-repeat;
-background-position: cover;
-
-}
 
 /* FORMULARIO DE LOGIN */
 .seccion-login{
@@ -195,99 +91,9 @@ h4{
     color: rgba(255, 255, 0, 0.8);
 }
 
-
-/* FOOTER */
-footer{
-    width: 100%;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    color: white;
-    background-color: rgb(27, 27, 27);
-}
-.footer-superior{
-    width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.info-footer{
-    width: 20%;
-    height: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
-.info-footer h4{
-    width: 100%;
-    height: 50%;
-    border-bottom:rgb(8, 4, 58);
-}
-.info-footer h5{
-    margin-top: 3%;
-    width: 100%;
-    height: 50%;
-}
-.footer-inferior{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30%;
-    width: 100%;
-    border-bottom:rgb(8, 4, 58);
-   
-}
-
 /* MEDIDAS PARA TABLET */
 @media (max-width: 768px){
     
-    /* HEADER SUPERIOR - TABLET */
-    
-        .menu-hamburguesa{
-            display: block;
-            position: absolute;
-            top: 15px;
-            right: 25px;
-        }
-        .div-logo{
-            position: absolute;
-            top: 2px;
-        }
-        .div-logo a{
-            padding: 0;
-            padding-left: 5%;
-            width: auto;
-        }
-        
-        .enlaces-menu{  
-            width: 100vw;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            align-items: center;
-            height: 45vh;
-            background-color: rgba(0, 0, 0, 0.8);
-    
-            padding-top: 9vh;
-            display: none;
-        }
-        .enlaces-menu li{
-            height: 20%;
-            width: 50%;
-        }
-        .enlaces-menu li a:hover{
-            text-decoration: underline;
-            text-shadow: 1px 1px 1px black;
-        }
-        .enlaces-menu.activado{
-            display: flex;
-        }
 /* FORMULARIO DE LOGIN - TABLET*/
 .formulario-login{
     width: 65%;
@@ -305,33 +111,17 @@ footer{
     font-size: 2.5vw;
 }
    
-    /* FOOTER - TABLET */
-    .footer-superior{
-        justify-content: space-around;
-    }
-    .info-footer{
-        width: 33%;
-    }
     }
 /* MEDIDAS PARA MOBILE */
 @media (max-width: 460px){
 
-    /* HEADER SUPERIOR - MOBILE */
-      .div-logo{
-          width: 85%;
-      }
-      .div-logo a{
-          padding:0 ;
-          padding-left: 5%;
-      }
 /* FORMULARIO DE LOGIN - MOBILE */
 .seccion-login{
     height: 92vh;
 }
 .formulario-login{
     width: 85%;
-    height: 60%;
-   
+    height: 60%; 
 }
 h4{
     display: flex;
@@ -341,7 +131,6 @@ h4{
     width: auto;
     height: 10%;
     font-size: 4vw;
-    
 }
 .formulario-login form{
     width: 90%;
@@ -362,32 +151,4 @@ h4{
     display: flex;
     flex-direction: row;
 }
-  
-    
-/* FOOTER - MOBILE */
-footer{
-    height: 50vh;
-}
-.footer-superior{
-    height: 60%;
-    flex-direction: column;
-}
-.info-footer{
-    width: 90%;
-    height: 25%;
-}
-.info-footer h4{
-    height: auto;
-}
-.info-footer h5{
-    margin-top:0;
-    height: auto;
-}
-.footer-inferior{
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    height: 40%;
-}
-
 }

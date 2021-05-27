@@ -2,10 +2,6 @@
 const express = require("express")
 const app = express()
 
-app.listen(process.env.PORT || 3000,()=>{
-    console.log("servidor corriendo en puerto 3000")
-})
-
 
 // Rutas
 const mainRoutes = require("./src/routes/mainRoutes")
@@ -25,7 +21,7 @@ app.set("views", "src/views")
 
 
 // Iniciamos el servidor
-app.listen(process.env.PORT || 3003,()=>{
+app.listen(process.env.PORT || 3000,()=>{
     console.log("servidor corriendo en puerto 3000")
 })
 

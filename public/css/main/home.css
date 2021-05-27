@@ -71,6 +71,7 @@ background: linear-gradient(to right, #eef2f38f, #8e9eabb2); /* W3C, IE 10+/ Edg
 .div-logo a{
     text-decoration: none;
     color:  white;
+    text-shadow: 1px 1px 1px black;
     font-weight: 600;
     padding: 0 8%;
     width: 30%;
@@ -108,6 +109,7 @@ nav{
 .enlaces-menu li a{
     text-decoration: none;
     color:  white;
+    text-shadow: 1px 1px 1px black;
     font-weight: 600;
 }
 .enlaces-menu li a:hover{

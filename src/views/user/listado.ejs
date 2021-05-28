@@ -19,60 +19,23 @@
          <table>
              <tr>
                  <th class="id"> # </th>
-                 <th>Nombre </th>
-                 <th>Apellido </th>
-                 <th>Mail </th>
-                 <th>Contraseña</th>
+                 <th class="nombre">Nombre </th>
+                 <th class="apellido">Apellido </th>
+                 <th class="email">E-mail </th>
                  <th></th>
              </tr>
+             <% users.forEach(user => { %>
              <tr class="fila-impar">
-                 <td class="id">1</td>
-                 <td>Joaquin</td>
-                 <td>Fuentes</td>
-                 <td>joaquin.fuentes1327@gmail.com</td>
-                 <td>joackobj10</td>
-                 <td class="button"><button>Borrar</button></td>
+                 <td class="id"><%= user.id %></td>
+                 <td class="nombre"><%= user.nombre %></td>
+                 <td class="apellido"><%= user.apellido%></td>
+                 <td class="email"><%= user.email %></td>
+                 <td class="button"><form action="/usuarios/<%= user.id %>?_method=delete" method="POST">
+                                    <button>Borrar</button>
+                                    </form>
+                </td>
              </tr>
-             <tr class="fila-par">
-                 <td class="id">2</td>
-                 <td>Juan</td>
-                 <td>Pérez</td>
-                 <td>jan@hotmail.com</td>
-                 <td>juan1234</td>
-                 <td class="button"><button>Borrar</button></td>
-             </tr>
-             <tr class="fila-impar">
-                 <td class="id">1</td>
-                 <td>Joaquin</td>
-                 <td>Fuentes</td>
-                 <td>joaquin.fuentes1327@gmail.com</td>
-                 <td>joackobj10</td>
-                 <td class="button"><button>Borrar</button></td>
-             </tr>
-             <tr class="fila-par">
-                 <td class="id">2</td>
-                 <td>Juan</td>
-                 <td>Pérez</td>
-                 <td>jan@hotmail.com</td>
-                 <td>juan1234</td>
-                 <td class="button"><button>Borrar</button></td>
-             </tr>
-             <tr class="fila-impar">
-                 <td class="id">1</td>
-                 <td>Joaquin</td>
-                 <td>Fuentes</td>
-                 <td>joaquin.fuentes1327@gmail.com</td>
-                 <td>joackobj10</td>
-                 <td class="button"><button>Borrar</button></td>
-             </tr>
-             <tr class="fila-par">
-                 <td class="id">2</td>
-                 <td>Juan</td>
-                 <td>Pérez</td>
-                 <td>jan@hotmail.com</td>
-                 <td>juan1234</td>
-                 <td class="button"><button>Borrar</button></td>
-             </tr>
+             <% }) %>
          </table>
     </main>
 

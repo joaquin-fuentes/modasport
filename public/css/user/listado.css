@@ -41,16 +41,19 @@ th{
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
 }
 .id{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
+}
+.nombre, .apellido, .email{
+    width: auto;
 }
 .fila-impar{
     background-color: rgba(202, 200, 200, 0.986);

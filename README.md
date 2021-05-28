@@ -2,6 +2,4 @@
 
 # Actualmente encuentro trabajando en este proyecto
 
-#terminal:
-#npm init
-#npm install express
+# se lo puede ver en el siguiente link: https://modasport.herokuapp.com/

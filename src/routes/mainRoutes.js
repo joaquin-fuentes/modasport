@@ -6,7 +6,7 @@ const router = express.Router()
 
 router.get ("/", mainController.home);
 
-router.get ("/contact", mainController.contact);
+router.get ("/contacto", mainController.contact);
 
 
  module.exports = router

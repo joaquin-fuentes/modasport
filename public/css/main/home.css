@@ -409,7 +409,10 @@ footer{
 @media (max-width: 768px){
     
 /* HEADER SUPERIOR - TABLET */
-
+    .div-logo a, .menu-hamburguesa{
+        text-shadow: 2px 2px 2px black;
+        color: rgb(231, 231, 231);
+    }
     .menu-hamburguesa{
         display: block;
         position: absolute;

@@ -11,13 +11,18 @@ const cors = require ("cors")
 const mainRoutes = require("./src/routes/mainRoutes")
 const usersRoutes = require("./src/routes/userRoutes")
 const productsRouter = require('./src/routes/productRoutes')
+const apiRouter = require('./src/routes/apiUserRoutes')
 
 
 // Configuración
 app.use(express.static("public")) 
-
 app.set("view engine", "ejs")
 app.set("views", "src/views")
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(methodOverride('_method'));
+
+
 
 //middlewares
 app.use(cors())
@@ -30,11 +35,6 @@ app.use(session({
 }));
 //app.use(auth);
 
-// Formularios
-app.use(express.urlencoded({ extended: false }));
-app.use(methodOverride('_method'));
-
-
 
 
 
@@ -43,6 +43,7 @@ app.use(methodOverride('_method'));
 app.use("/",mainRoutes)
 app.use("/usuarios",usersRoutes)
 app.use('/productos', productsRouter);
+app.use('/api', apiRouter);
 
 // Iniciamos el servidor
 app.listen(process.env.PORT || 3000,()=>{

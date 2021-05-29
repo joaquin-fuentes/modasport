@@ -17,12 +17,12 @@
     <section class="seccion-login">
            <main class="formulario-login animadoFijo">
                <h1>CREACION DE PRODUCTO</h1>
-               <form action="">
+               <form action="/productos" method="POST" enctype="multipart/form-data">
                    <div class="col-horizontal">
                          <div class="col-vertical">
                              <div class="input-apellido">
                                  <label for="imagen">Imagen: </i></label>
-                                 <input type="file" name="imagen" id="imagen" placeholder="imagen">
+                                 <input type="file" name="imagen" id="imagen"">
                              </div>
                              <div class="input-apellido">
                                  <label for="prenda">Prenda: </i></label>
@@ -34,7 +34,7 @@
                              </div>
                              <div class="input-contraseña">
                                  <label for="talle">Talle: </label>
-                                 <input type="password" name="talle" id="talle" placeholder="Talle">
+                                 <input type="text" name="talle" id="talle" placeholder="Talle">
                              </div>
                          </div>
                          <div class="col-vertical">
@@ -48,12 +48,13 @@
                               </div>
                               <div class="input-email">
                                   <label for="precio">Precio: </i></label>
-                                  <input type="text" name="precio" id="precio" placeholder="Precio">
+                                  <input type="number" name="precio" id="precio" placeholder="Precio">
                               </div>
                               <div class="input-contraseña">
-                                  <label for="Detalle">Detalle: </label>
-                                  <input type="password" name="Detalle" id="Detalle" placeholder="Detalle">
+                                  <label for="detalle">Detalle: </label>
+                                  <input type="text" name="detalle" id="detalle" placeholder="Detalle">
                               </div>
+                              <!-- DETALLE: HOMBRE, MUJER, PROMOCION, ACCESORIO -->
                          </div>
                     </div>
                     <div class="contenedor-boton">
